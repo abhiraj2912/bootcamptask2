@@ -25,6 +25,13 @@ public class Menu2 {
             System.out.println("Prime number");
         }
     }
+    static void evenOrNot(int a){
+        if(a%2==0){
+            System.out.println("Even number");
+        }else {
+            System.out.println("not a even number");
+        }
+    }
     public static void main(String[] args) {
         int x= 1,n, a, b, c;
         while (x==1){
@@ -32,6 +39,7 @@ public class Menu2 {
             System.out.println("1. Largest of 3 number");
             System.out.println("2. Smallest of 3 number");
             System.out.println("3. Prime or not");
+            System.out.println("4. Even or not");
             System.out.println("6. Exit");
 
             Scanner sc = new Scanner(System.in);
@@ -55,6 +63,12 @@ public class Menu2 {
                     System.out.println("Enter the number");
                     a=sc.nextInt();
                     primeOrNot(a);
+                    break;
+                case 4:
+                    System.out.println("Enter the number");
+                    a=sc.nextInt();
+                    evenOrNot(a);
+                    break;
 
 
                 case 6:
